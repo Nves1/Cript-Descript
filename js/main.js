@@ -1,13 +1,16 @@
 var textArea = document.querySelector("#text");
 var resultCript = document.querySelector("#textoFinal");
+var btnCriptografa = document.querySelector("#btn_cript")
+var btnDescriptografa = document.querySelector("#btn_descript")
+
 function criptografa(){
-    var texto = textArea.value;
-    
-    var resultCript = texto.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
-    document.getElementById('textoFinal').innerHTML = '<textarea class="text-area-result" readonly id="textResult">' + resultCript + '</textarea>' + 
-    '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
-    console.log(document.getElementById('text'))
-}     
+        var texto = textArea.value;
+
+        var resultCript = texto.replace(/e/g, 'enter').replace(/i/g, 'imes').replace(/a/g, 'ai').replace(/o/g, 'ober').replace(/u/g, 'ufat');
+        document.getElementById('textoFinal').innerHTML = '<textarea class="text-area-result" readonly id="textResult">' + resultCript + '</textarea>' + 
+        '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+        console.log(document.getElementById('text'))
+    }  
 function descriptografa(){
     var texto = textArea.value;
     
