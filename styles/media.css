@@ -62,4 +62,27 @@
     .texto-none > img{
         width: 0;    
 }
+@media screen and (max-width: 360px){
+    .quadrado-left{
+        width: 18rem;
+        height: 20rem;
+    }
+    .quadrado-right{
+        width: 18rem;
+        height: 20rem;
+    }
+    main{
+        gap: 2%;
+    }
+    .text-area{
+
+        width: 300px;
+        padding-left: 10%;
+        height: 130px;
+    }
+    .text-area-result{
+        height: 200px;
+    }
+}
+
 }
